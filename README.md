@@ -24,7 +24,7 @@ To run this web application, you will need to have the following software instal
 
     -> Run the program by using this command in terminal:- python app.py
 
-    =>You should see a message saying that the server is "Running on http://127.0.0.1:5000"
+    => You should see a message saying that the server is "Running on http://127.0.0.1:5000"
 
 > WARNING <
 
