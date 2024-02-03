@@ -17,11 +17,13 @@ These instructions will get you a copy of the project up and running on your loc
 To run this web application, you will need to have the following software installed on your local machine:
 
     -> Python 3.7 or higher  (Best Suggestion:- Use 3.11.4 version of python.)
+
     -> Flask.
 
 >> Installation <<
 
     -> Clone this repository to your local machine.
+
     -> Navigate to the root directory of the project.
 
     -> Run the program by using this command in terminal:- python app.py
