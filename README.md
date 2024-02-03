@@ -4,6 +4,9 @@
 
 Happy URL Shortener is a web application that allows users to shorten long URLs into shorter ones that are easier to share.
 
+![Screenshot 2024-02-03 184527](https://github.com/Someshsw1109/URL--Shortening/assets/123828588/426cb057-e4f7-443b-b4d4-73d203a9eff2)
+
+
 
 > Getting Started <
 
