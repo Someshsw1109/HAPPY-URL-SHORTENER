@@ -34,5 +34,5 @@ This is a development server. Do not use it in a production deployment. Use a pr
 
 > Bulit with <
 
--> Flask
--> Python (Recomended version- Latest version [3.11.4] for better experience)
+    -> Flask
+    -> Python (Recomended version- Latest version [3.11.4] for better experience)
