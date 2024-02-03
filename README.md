@@ -18,7 +18,9 @@ To run this web application, you will need to have the following software instal
 
     -> Python 3.7 or higher  (Best Suggestion:- Use 3.11.4 version of python.)
     -> Flask.
-    -> Installing.
+
+>> Installation <<
+
     -> Clone this repository to your local machine.
     -> Navigate to the root directory of the project.
 
