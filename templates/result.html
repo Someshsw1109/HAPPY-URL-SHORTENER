@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .center-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .block-blue {
+      background-color: #3498db; /* Blue background */
+      color: #ffffff; /* White text color */
+      padding: 20px; /* Add padding to create space around the content */
+    }
+    .box-pink {
+      border: 2px solid #e91e63; /* Pink border */
+      padding: 20px; /* Add padding to create space between content and border */
+    }
+    .box-dark-yellow {
+      border: 2px solid #b58900; /* Dark yellow border */
+      padding: 20px; /* Add padding to create space between content and border */
+    }
+    .box-dark-green {
+      border: 2px solid #3d8b37; /* Dark green border */
+      padding: 20px; /* Add padding to create space between content and border */
+    }
+    .box-dark-red {
+      border: 2px solid #9e2b23; /* Dark red border */
+      padding: 20px; /* Add padding to create space between content and border */
+    }
+  </style>
+  <script>
+    function centerResult() {
+      var result = document.getElementById('delete-result');
+      result.style.position = 'absolute';
+      result.style.top = '50%';
+      result.style.left = '50%';
+      result.style.transform = 'translate(-50%, -50%)';
+    }
+  </script>
+</head>
+<body>
+  {% block content %}
+    <div class="center-content">
+      <div class="block-blue">
+        <h1>URL Shortened!</h1>
+      </div>
+      <div class="box-pink">
+        <p>Your shortened URL is:</p>
+        <p><a href="{{ url_for('redirect_to_url', short_url=click_url) }}">{{ url_for('redirect_to_url', short_url=short_url) }}</a></p>
+      </div>
+      <div class="box-dark-yellow">
+        <p>URL link</p>
+      </div>
+      <div class="box-dark-green">
+        <p>Original URL: {{ original_url }}</p>
+      </div>
+      <div class="box-dark-red">
+        <form method="post" action="{{ url_for('delete_url', short_url=click_url) }}" onsubmit="centerResult()">
+          <input type="hidden" name="_method" value="DELETE">
+          <input type="submit" value="Delete Short URL">
+        </form>
+      </div>
+      <div id="delete-result">
+        <!-- Result of the delete operation will be displayed here -->
+      </div>
+    </div>
+  {% endblock %}
+</body>
+</html>
