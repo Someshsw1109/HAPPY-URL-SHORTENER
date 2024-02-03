@@ -28,7 +28,7 @@ def index():
         original_url = request.form["url"]
         custom_url = request.form["custom_url"]
         if custom_url == "":
-            custom_url = "ContloUrlShortener"
+            custom_url = "HappyUrlShortener"
         short_url = generate_short_url(original_url)
         return render_template("result.html", short_url=f"{custom_url}.com/{short_url}", original_url=original_url, click_url=short_url)
 
